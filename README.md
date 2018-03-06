@@ -3,7 +3,7 @@
 ####  gets images from multiple rest apis, shuffles then displays images and a random wallpaper.
 
 
-#### Check out the [demo](https://image-api-smashin.herokuapp.com/)
+#### Check out the [demo](http://jmh-image-api-smashin.surge.sh/)
 
 ```
 git clone https://github.com/jasenmichael/image-api-smashin.git
