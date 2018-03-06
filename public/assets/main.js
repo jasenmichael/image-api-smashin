@@ -2,27 +2,24 @@ var safeSearch = false
 var userWallpapers = {}
 var imageList = ""
 var wallpapers = []
-var count = 3
+var count = 5
 var imageTemplate = ""
 var userWallpapers = ""
 const users = [
   "keithpitt",
   "cyric",
+  "starhua628",
   "l1dge",
   "Kids1201",
-  "Sebuhi",
-  "starhua628"
+  "Sebuhi"
+
 ]
 
 loadPage()
 
 function loadPage() {
   document.getElementById('main').innerHTML = ""
-  imageList =
-    console.log("assets/main.js loaded")
-  getWallpapers(users, count)
-  //document.getElementById('h-banner').src = wallpapers[5].preview.url
-  // document.getElementById('h-banner').src.innerTest = wallpapers[0].thumb.url
+  imageList = getWallpapers(users, count)
 }
 
 function getWallpapers(users, count) {
@@ -62,17 +59,23 @@ function loadImages() {
   imageList = ""
   document.getElementById('main').innerHTML =
     wallpapers.forEach((wallpaper, index) => {
-      console.log(wallpaper);
+      //console.log(wallpaper);
       imageTemplate = `
-    <a id="${index}" href="${wallpaper.url}">
-      <img class="responsive-img" src="${wallpaper.thumb.url}" class="masonry-img"/>
-    </a>
+   <a id="${index}" href="${wallpaper.url}" data-src="${wallpaper.url}">
+     <img src="${wallpaper.thumb.url}"/>
+   </a>
    `
       // main.innerHTML += imageTemplate
       imageList += imageTemplate
     })
   document.getElementById('main').innerHTML = imageList
+  $('.parallax').parallax()
   document.getElementById('h-banner').src = wallpapers[5].preview.url
+  lightGallery(document.getElementById('main'), {
+    mode: 'lg-fade',
+    download: false
+  })
+
 }
 
 function removeDuplicates(array) {
@@ -117,7 +120,7 @@ function toggleSafeSearch(event) {
 }
 
 $(document).ready(function() {
-  $('.parallax').parallax()
+  // $('.parallax').parallax()
 
 })
 $(window).on("load", () => {
