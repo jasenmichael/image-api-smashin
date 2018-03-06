@@ -19,7 +19,7 @@ loadPage()
 
 function loadPage() {
   document.getElementById('main').innerHTML = ""
-  imageList = getWallpapers(users, count)
+  getWallpapers(users, count)
 }
 
 function getWallpapers(users, count) {
