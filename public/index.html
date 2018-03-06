@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>imAGeeApiSmashin'</title>
+  <link rel="stylesheet" href="./assets//lightgallery.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/main.css">
 </head>
@@ -21,12 +23,11 @@
 
   <div class="parallax-container">
     <div class="parallax"><img id="h-banner" src=""></div>
-
   </div>
 
-  <div class="section">
-    <div class="row container">
-      <div class="switch">
+  <div class="section container center">
+    <div class="row ">
+      <div class="switch col sm12">
         <span class="red-text">Safe Search:</span>
         <label>
           Off
@@ -35,6 +36,9 @@
           On
         </label>
       </div>
+      <div class="col sm12 right">
+        <a class="waves-effect waves-light btn" onclick="loadPage()"><i class="material-icons right">add_to_photos</i>add more images</a>
+      </div>
     </div>
   </div>
 
@@ -42,10 +46,10 @@
     <!-- main content -->
   </div>
 
-
-  <script src="./assets/jquery-3.2.1.min.js"></script>
-  <script src="./assets/materialize.min.js"></script>
-  <script src="./assets/axios.js"></script>
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="./assets/js/lightgallery.min.js"></script>
+  <script src="./assets/js/materialize.min.js"></script>
+  <script src="./assets/js/axios.js"></script>
   <script src="./assets/main.js"></script>
 </body>
 
