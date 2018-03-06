@@ -3,17 +3,49 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>imAGeeApiSmashin'</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/main.css">
 </head>
 
 <body>
 
-  <h1>ImgSmash'n</h1>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <nav class="cyan darken-3">
+    <div class="container header">
+      <div class="nav-wrapper">
+        <a href="index.html" class="left brand-logo  flow-text section">imAGeeApiSmashin</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="parallax-container">
+    <div class="parallax"><img id="h-banner" src=""></div>
+
+  </div>
+
+  <div class="section">
+    <div class="row container">
+      <div class="switch">
+        <span class="red-text">Safe Search:</span>
+        <label>
+          Off
+          <input  onclick="toggleSafeSearch(event)" type="checkbox">
+          <span class="lever"></span>
+          On
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div id="main" class="s12 center">
+    <!-- main content -->
+  </div>
+
+
+  <script src="./assets/jquery-3.2.1.min.js"></script>
+  <script src="./assets/materialize.min.js"></script>
+  <script src="./assets/axios.js"></script>
   <script src="./assets/main.js"></script>
 </body>
 
