@@ -1,0 +1,29 @@
+body {}
+
+.parallax-container {
+  height: 30vw;
+}
+
+#main {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+span.red-text {
+  font-size: 160%;
+  padding-right: 1em;
+}
+
+.brand-logo {
+  margin-top: -12px;
+
+  text-decoration: underline;
+}
+
+#h-banner {
+  max-width: 100vw;
+}
+
+nav {
+  height: 2.5em;
+}
